@@ -11,9 +11,14 @@ describe('template spec', () => {
     cy.get('.avatar.background_color.pink').click();
     cy.get('a').contains('Listas').click();
 
-    cy.get('.rounded.button.border_color.background_color.pink').click();
-    cy.get('#name').type('Minha Lista - Squad 5');
-    cy.get('#description').type('Minha lista de filmes e séries favoritas.');
-    cy.get('#step_1_submit').click();
+    cy.get('a').contains('Minha Lista - Squad 5').click();
+    cy.get('a').contains('Editar').click();
+
+    cy.get('a').contains('Adicionar/Editar itens').click();
+       
+    cy.contains('h4', 'Capitão América: Guerra Civil') 
+      .parents('li') 
+      .find('span.circle-remove')
+      .click();
   })
 })

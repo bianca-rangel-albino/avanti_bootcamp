@@ -11,9 +11,15 @@ describe('template spec', () => {
     cy.get('.avatar.background_color.pink').click();
     cy.get('a').contains('Listas').click();
 
-    cy.get('.rounded.button.border_color.background_color.pink').click();
-    cy.get('#name').type('Minha Lista - Squad 5');
-    cy.get('#description').type('Minha lista de filmes e séries favoritas.');
-    cy.get('#step_1_submit').click();
+    cy.get('a').contains('Minha Lista - Squad 5').click();
+    cy.get('a').contains('Editar').click();
+
+
+    cy.get('a').contains('Excluir lista').click();
+
+    cy.get('#delete_list').click();
+
+    cy.get('.k-button-text').contains('Sim').click();
+
   })
 })
