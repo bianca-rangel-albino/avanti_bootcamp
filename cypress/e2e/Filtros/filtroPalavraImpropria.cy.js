@@ -18,7 +18,7 @@ describe('template spec', () => {
     cy.get('#inner_search_v4').type('merda');
     cy.get('input[type="submit"][value="Buscar"]').click();
     cy.wait(5000);
-    cy.get('.result') 
-    .should('not.contain.text', 'merda');
+    cy.get('.result').should('not.match', /merda/i); // A opção 'i' ignora maiúsculas/minúsculas
+    
   });
 });
