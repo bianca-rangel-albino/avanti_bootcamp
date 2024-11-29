@@ -4,5 +4,7 @@ describe('template spec', () => {
 
     cy.get('#inner_search_v4', { timeout: 10000 }).should('be.visible').type('um amor para recordar');
     cy.get('input[value="Buscar"]').click()
+
+    cy.contains('Um Amor para Recordar')
   })
 })
