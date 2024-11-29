@@ -1,5 +1,5 @@
 describe('template spec', () => {
-    it('passes', () => {
+    it('Login com dados de cadastros corretos', () => {
       cy.visit('https://www.themoviedb.org'); 
   
       cy.get('a[aria-label="Entrar"]').click();
