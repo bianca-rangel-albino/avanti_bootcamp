@@ -1,7 +1,7 @@
 const { faker, ColorModule } = require('@faker-js/faker');
 
 describe('testes para validar registro de usuario', () => {
-    it('Validar mensagem Username Vazio', () => {
+    it('CASO DE TESTE 02 -  Cadastro com erro - Campo nome de usuário vazio ', () => {
         cy.visit('https://www.themoviedb.org/');
        
         cy.get('.primary').within(() => {

@@ -1,5 +1,5 @@
 describe('template spec', () => {
-  it('passes', () => {
+  it('CASO DE TESTE 10 - Busca de filme usando o nome incompleto', () => {
     cy.visit('https://www.themoviedb.org')
 
     cy.get('#inner_search_v4', { timeout: 10000 }).should('be.visible').type('amor');

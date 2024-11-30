@@ -1,5 +1,5 @@
 describe('template spec', () => {
-  it('passes', () => {
+  it('pCASO DE TESTE 15 - Filtro de palavras imprópriassses', () => {
     cy.visit('https://www.themoviedb.org'); 
 
     cy.get('a[aria-label="Entrar"]').click();
@@ -19,6 +19,6 @@ describe('template spec', () => {
     cy.get('input[type="submit"][value="Buscar"]').click();
     cy.wait(5000);
     cy.get('.result').should('not.match', /merda/i); // A opção 'i' ignora maiúsculas/minúsculas
-    
+    a
   });
 });

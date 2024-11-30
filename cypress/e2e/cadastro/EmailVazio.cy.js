@@ -20,7 +20,7 @@ describe('testes para validar registro de usuario focando no Email', () => {
         cy.insertPasswordConfirm(password);
     })
 
-    it('Validar mensagem Email Vazio', () => {
+    it('CASO DE TESTE 03 - Cadastro com erro - Campo de email vazio', () => {
 
         const mensagemError = 'Email does not appear to be valid'; //tiro daqui cmd
 
@@ -37,7 +37,7 @@ describe('testes para validar registro de usuario focando no Email', () => {
 
     }) 
     
-    it('Validar mensagem Email sem @ Vazio', () => {
+    it('CASO DE TESTE 06 - Cadastro com erro - Campo com e-mail inválido', () => {
 
         const mensagemError = 'Email does not appear to be valid';
 
